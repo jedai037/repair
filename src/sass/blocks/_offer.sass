@@ -31,6 +31,20 @@
     &__button
         width: 100%
         min-height: 70px
+    &-contacts
+        display: flex 
+        margin-top: 35px
+        line-height: 1.5
+    &__manager
+        width: 50%
+        margin-right: 70px
+    &__callback
+        width: 50%
+    &__number
+        display: block
+        +bold
+        text-decoration: none
+        color: $text-color
 
 @media (max-width: 1200px)
     .offer
@@ -40,6 +54,15 @@
             margin-bottom: 10px
         &__button
             font-style: 13px
+        &-contacts
+            flex-direction: column
+        &__manager
+            width: 100%
+            padding: 10px 0
+        &__callback
+            width: 100%
+        &__call
+            padding: 10px 0
 
 @media (max-width: 768px)
     .offer
@@ -47,3 +70,9 @@
         &-block
             width: 100%
             padding-right: 0
+        &-contacts
+            flex-direction: row
+        &__manager
+            width: 50%
+        &__callback
+            width: 50%

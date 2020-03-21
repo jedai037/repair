@@ -87,6 +87,11 @@ img {
   padding: 20px 26px;
   font-style: 15px;
   border-radius: 10px;
+  outline: none;
+}
+
+.input:focus {
+  border: 1px solid #ffd200;
 }
 
 .navbar {
@@ -311,6 +316,31 @@ img {
   min-height: 70px;
 }
 
+.offer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+  line-height: 1.5;
+}
+
+.offer__manager {
+  width: 50%;
+  margin-right: 70px;
+}
+
+.offer__callback {
+  width: 50%;
+}
+
+.offer__number {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -322,6 +352,22 @@ img {
   .offer__button {
     font-style: 13px;
   }
+  .offer-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__manager {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .offer__callback {
+    width: 100%;
+  }
+  .offer__call {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -331,6 +377,18 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .offer__manager {
+    width: 50%;
+  }
+  .offer__callback {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
