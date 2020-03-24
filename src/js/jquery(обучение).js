@@ -69,6 +69,6 @@ $(function() {
         //$(this).unwrap('<div class="hero-text"></div>');        //.unwrap('') - УБИРАЕТ указанную ОБЁРТКУ элемента
         //$(this).empty('')       //.empty - обнуляет элемент
         //$(this).remove('')       //.empty - УДАЛЯЕТ элемент
-        $(this).append('<br/>'+$(this).text())      // в конце элемента скопирован текст элемента
+        $(this).append('<br/>'+$(this).text());      // в конце элемента скопирован текст элемента
     });       
 });

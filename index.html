@@ -6,6 +6,8 @@
     <title>Repair</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/owl.carousel.css">
 </head>
 <body>
     <a class="arr" id="arr">↑</a>
@@ -94,6 +96,33 @@
             </container>
         </section>
         <!-- /.offer -->
+
+        <section class="section portfolio">
+            <div class="container">
+                <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2>
+
+                <div class="owl-carousel">
+                    <img class="slider__image" src="src/img/portfolio/slider-1.jpg" alt="">
+                    <img class="slider__image" src="src/img/portfolio/slider-2.jpg" alt="">
+                    <img class="slider__image" src="src/img/portfolio/slider-3.jpg" alt="">
+                    <img class="slider__image" src="src/img/portfolio/slider-1.jpg" alt="">
+                    <img class="slider__image" src="src/img/portfolio/slider-2.jpg" alt="">
+                    <img class="slider__image" src="src/img/portfolio/slider-3.jpg" alt="">
+                </div>
+                <!-- /.slider -->
+            <div class="arrows portfolio__arrows">
+                <div class="arrows__left">
+                    <img src="src/img/portfolio/left-arrow.png" alt="">
+                </div>
+                <div class="arrows__right">
+                    <img src="src/img/portfolio/right-arrow.png" alt="">
+                </div>
+            </div>
+
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section portfolio -->
     </main>
     <div class="modal" id="modal">
         <div class="modal-dialog">
@@ -105,5 +134,63 @@
     <script src="src/js/jquery-3.4.1.min.js"></script>
     <!-- <script src="src/js/main.js"></script> -->
     <script src="src/js/modal.js"></script>
+
+    <!-- СЛАЙДЕР НА СЛИКЕ -->
+
+    <!-- <script src="src/js/slick.min.js"></script>
+    <script>
+        $(function() {
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.arrows__left'),
+                nextArrow: $('.arrows__right'),
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 450,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script> -->
+    <script src="src/js/owl.carousel.js"></script>
+    <script>
+        $(function() {
+            $('.owl-carousel').owlCarousel({ 
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+        });   
+    </script>
 </body>
 </html>
