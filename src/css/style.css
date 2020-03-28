@@ -22,6 +22,7 @@
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 img {
