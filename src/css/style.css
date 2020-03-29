@@ -23,6 +23,8 @@ body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -768,6 +770,8 @@ img {
 }
 
 .brif {
+  margin: 0;
+  padding: 0;
   background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brifbg.jpg");
   background-position: left center, center right;
   background-size: 50%, contain;
