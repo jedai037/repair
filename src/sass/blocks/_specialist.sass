@@ -1,0 +1,55 @@
+.specialist
+    &-title
+        margin: 0 auto
+        margin-bottom: 86px
+    &-subtitle
+        text-align: center
+        margin-bottom: 70px
+    &-block
+        display: flex
+        justify-content: space-between
+    &__item
+        max-width: 150px
+    &__image
+        margin: 0 auto
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100px
+        height: 100px
+        border: 1px solid $main-color
+        border-radius: 50%
+        position: relative
+        &::after
+            content: url("../img/specialist/arrow.png")
+            display: inline-block
+            position: absolute
+            left: 140px
+            bottom: 70px
+        &-noarr
+            &:after
+                content: ''
+                display: none
+    &__text
+        text-align: center
+        font-size: 14px
+        color: #000000
+
+@media (max-width: 1200px)
+    img
+        max-width: 100%
+    .specialist
+        &__image
+            &::after
+                content: url("../img/specialist/arrow.png")
+                display: none
+
+@media (max-width: 800px)
+    .specialist
+        &-block
+            flex-direction: column
+            margin: 0 auto
+            align-items: center
+        &__item
+            margin-bottom: 33px
