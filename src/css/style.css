@@ -129,6 +129,14 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  border: 1px solid red;
+}
+
+#username-error, #phone-error, #email-error {
+  border: none;
+}
+
 .navbar {
   padding: 8px 0px;
 }
